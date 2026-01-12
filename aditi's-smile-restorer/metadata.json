@@ -1,0 +1,7 @@
+{
+  "name": "Aditi's Smile Restorer",
+  "description": "A charming, talkative companion designed to cheer up Aditi with jokes, compliments, and apologies.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
