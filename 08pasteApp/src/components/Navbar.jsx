@@ -10,9 +10,9 @@ function Navbar() {
       <Navlink to='/paste'>
         paste
       </Navlink>
-      <Navlink to='/paste/id'>
+      {/* <Navlink to='/paste/id'>
         paste:id
-      </Navlink>
+      </Navlink> */}
     </div>
     
   )

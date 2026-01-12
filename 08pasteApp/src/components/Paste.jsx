@@ -2,6 +2,7 @@ import React from 'react'
 import {useSelector, useDispatch} from 'react-redux';
 import { removeFromPaste } from '../redux/pasteSlice';
 import toast from 'react-hot-toast';
+import { NavLink as Navlink } from 'react-router-dom'
 
 function Paste() {
   const pastes = useSelector((state) => state.paste.pastes);
@@ -21,7 +22,7 @@ function Paste() {
   return (
     <div>
       <input
-      className='px-2 py-1 border-2 border-gray-300 rounded-md mb-4 min-w-[580px]'type='search' placeholder='Search here' value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}/>
+      className='px-2 py-1 border-2 border-gray-300 rounded-md mb-4 min-w-[600px] h-12'type='search' placeholder='Search here' value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}/>
 
       <div>
         {filteredData.length > 0 && filteredData.map((paste)=>{
@@ -31,12 +32,16 @@ function Paste() {
               <p className='whitespace-pre-wrap'>{paste.content}</p>
               <div className='mt-4 flex gap-2 place-content-center'>
                 <button>
-                  <a href={`/?pasteId=${paste.id}`}>
+                  {/* <a href={`/?pasteId=${paste.id}`}>
                   Edit
-                  </a>
+                  </a> */}
+                  <Navlink to={`/?pasteId=${paste.id}`}>Edit</Navlink>
                 </button>
                 <button>
-                  View
+                  {/* <a href={`/paste/${paste.id}`}>
+                    View
+                  </a> */}
+                  <Navlink to={`/paste/${paste.id}`}>View </Navlink>
                 </button>
                 <button onClick={()=> handleDelete(paste?.id)}>
                   Delete
