@@ -29,6 +29,11 @@ const fs = require('fs');
 // fs.appendFileSync('./asyncText.txt',"\n this is the add text in the file via Async")
 
 
+// to add something in a existing text inside a file. via async
+// fs.appendFile('text.txt',"\n this is the add text in the file",()=>{})
+
+
+
 // To copy file to one another via using Sync
 // fs.cpSync('./text.txt','text-copy.txt');
 
@@ -71,8 +76,6 @@ const fs = require('fs');
 // to create a inner folders also
 fs.mkdirSync('my-docs/a/b',{recursive: true});
 
-// to add something in a existing text inside a file. via async
-// fs.appendFile('text.txt',"\n this is the add text in the file",()=>{})
 
 // fs.readFile('index.js', 'utf8', (err, data) => {
 //     if (err) {
