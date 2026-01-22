@@ -1,0 +1,20 @@
+REST API - JSON
+
+S.NO.    Method        Route             Description          
+01       GET           /user             HTML Document render - Done
+
+02       GET           api/user          List all user - Done
+
+03       GET           api/user/1        Get the user with id:1 done
+
+Dynamic path parameters
+Get /api/user/:id
+id -> variable / Dynamic
+
+04       GET           api/user/3        Get the user with id:3 done
+
+05       POST          api/user          Create New user
+
+06       Patch         api/user/1        Update user with id: 1
+
+07       Delete        api/user/1        Delete user with id: 1
