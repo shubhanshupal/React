@@ -13,5 +13,5 @@ Schema - Define the structure
 
   show tables/document - show collections
 
-  show tables/collection data - db.collection_name or table's.find({})
+  show tables/collection data - db.collection_name or db.table's.find({})
 
